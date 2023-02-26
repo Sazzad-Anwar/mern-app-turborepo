@@ -1,0 +1,22 @@
+{
+    "private": true,
+    "scripts": {
+        "build": "turbo run build",
+        "clean": "turbo run clean",
+        "dev": "dotenv -- turbo run dev --no-cache  --continue",
+        "dev:api": "dotenv -- turbo run dev --filter=api --no-cache --continue",
+        "dev:admin": "dotenv -- turbo run dev --filter=admin --no-cache --continue",
+        "dev:web": "dotenv -- turbo run dev --filter=web --no-cache --continue",
+        "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+        "lint": "turbo run lint",
+        "test": "turbo run test"
+    },
+    "devDependencies": {
+        "prettier": "^2.7.1",
+        "turbo": "latest"
+    },
+    "packageManager": "pnpm@7.15.0",
+    "dependencies": {
+        "dotenv-cli": "^7.0.0"
+    }
+}
